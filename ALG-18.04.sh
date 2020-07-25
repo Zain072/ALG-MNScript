@@ -1,5 +1,5 @@
 #!/bin/bash
-# BitalGO Masternode Setup Script V1.0 for Ubuntu 18.04 LTS
+# BitalGO Masternode Setup Script V2.0 for Ubuntu 18.04 LTS
 #
 # Script will attempt to autodetect primary public IP address
 # and generate masternode private key unless specified in command line
@@ -56,7 +56,7 @@ fi
 genkey=$1
 clear
 
-echo -e "${GREEN} ------- BitalGO MASTERNODE INSTALLER v1.0.0--------+
+echo -e "${GREEN} ------- BitalGO MASTERNODE INSTALLER v2.0.0--------+
  |                                                  |
  |                                                  |::
  |       The installation will install and run      |::
@@ -140,8 +140,8 @@ fi
 #Installing Daemon
 cd ~
 rm -rf /usr/local/bin/bitalgod*
-wget https://github.com/BitalgoCOIN/BitalGO/releases/download/v1.0/BitalGO-daemon-ubuntu-18.04.tar.gz
-tar -xzvf BitalGO-daemon-ubuntu-18.04.tar.gz
+wget https://github.com/BitalgoCOIN/BitalGO/releases/download/v2.0/BitalGO-v2.0-daemon-ubuntu-18.04.tar.gz
+tar -xzvf BitalGO-v2.0-daemon-ubuntu-18.04.tar.gz
 sudo chmod -R 755 bitalgo-cli
 sudo chmod -R 755 bitalgod
 cp -p -r bitalgod /usr/local/bin
