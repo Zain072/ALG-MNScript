@@ -184,9 +184,9 @@ done
     bitalgo-cli stop
     sleep 5
 cd ~/.bitalgo/ && rm -rf blocks chainstate sporks
-cd ~/.bitalgo/ && wget http://192.248.149.49/bootstrap.tar.gz
-cd ~/.bitalgo/ && tar -xzvf bootstrap.tar.gz
-sudo rm -rf ~/.bitalgo/bootstrap.tar.gz
+cd ~/.bitalgo/ && wget https://github.com/BitalgoCOIN/BitalGO/releases/download/v2.0/bootstrap.zip
+cd ~/.bitalgo/ && unzip bootstrap.zip
+sudo rm -rf ~/.bitalgo/bootstrap.zip
 
 # Create bitalgo.conf
 cat <<EOF > ~/.bitalgo/bitalgo.conf
